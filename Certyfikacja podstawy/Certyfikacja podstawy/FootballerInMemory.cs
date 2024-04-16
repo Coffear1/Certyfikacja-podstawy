@@ -18,7 +18,7 @@
             }
             else
             {
-                throw new Exception("Nie można dodać tej oceny. Proszę używać cyfr i liczb z zakresu 0-100");
+                throw new Exception("Nie można dodać tej liczby goli. Proszę używać cyfr i liczb z zakresu 0-100");
             }
             if (score >= 3 && score <= 100 && ScoreAdded != null)
             {
