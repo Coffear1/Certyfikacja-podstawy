@@ -6,8 +6,8 @@
 
         private List<float> scores = new List<float>();
 
-        public FootballerInMemory(string name, string surname, int Age)
-           : base(name, surname, Age)
+        public FootballerInMemory(string name, string surname, string nationality)
+           : base(name, surname, nationality)
         {
         }
         public override void AddScore(float score)

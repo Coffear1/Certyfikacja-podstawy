@@ -6,8 +6,8 @@
 
         private const string fileName = "liczba goli w sezonie.txt";
 
-        public FootballerInFile(string name, string surname, int Age)
-            : base(name, surname, Age)
+        public FootballerInFile(string name, string surname, string nationality)
+            : base(name, surname, nationality)
         {
 
         }

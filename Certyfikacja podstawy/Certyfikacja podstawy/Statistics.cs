@@ -19,17 +19,17 @@ namespace Certyfikacja_podstawy
         {
             get 
             {
-                switch(this.Average) 
+                switch(this.Sum) 
                 {
-                    case var Average when Average >= 10:
+                    case var Sum when Sum >= 10:
                         return 'A';
-                    case var Average when Average >= 8:
+                    case var Sum when Sum >= 8:
                         return 'B';
-                    case var Average when Average >= 6:
+                    case var Sum when Sum >= 6:
                         return 'C';
-                    case var Average when Average >= 4:
+                    case var Sum when Sum >= 4:
                         return 'D';
-                    case var Average when Average >= 2:
+                    case var Sum when Sum >= 2:
                         return 'E';
                     default:
                         return 'F';

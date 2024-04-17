@@ -1,20 +1,22 @@
-﻿namespace Certyfikacja_podstawy
+﻿using System.Globalization;
+
+namespace Certyfikacja_podstawy
 {
     public abstract class FootballerBase : IFootballer
     {
         public delegate void ScoreAddedDelegate(object sender, EventArgs args);
 
         public abstract event ScoreAddedDelegate ScoreAdded;
-        public FootballerBase(string name, string surname, int age)
+        public FootballerBase(string name, string surname, string nationality)
         {
             this.Name = name;
             this.Surname = surname;
-            this.Age = age;
+            this.Nationality = nationality;
         }
        
         public string Name { get;}
         public string Surname { get;}
-        public int Age { get;}
+        public string Nationality { get;}
 
         public abstract void AddScore(float score);
         

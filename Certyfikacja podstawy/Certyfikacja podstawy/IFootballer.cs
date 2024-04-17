@@ -4,7 +4,7 @@
     {
         string Name { get; }
         string Surname { get; }
-        int Age { get; }
+        string Nationality { get; }
         void AddScore(float score);
         void AddScore(int score);
         void AddScore(string score);
