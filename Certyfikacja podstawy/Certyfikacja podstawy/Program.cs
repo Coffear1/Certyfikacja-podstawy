@@ -7,7 +7,6 @@ Console.WriteLine();
 var footballer = new FootballerInMemory(string.Empty, string.Empty, string.Empty);
 footballer.ScoreAdded += FootballerScoreAdded;
 
-
 void FootballerScoreAdded(object sender, EventArgs args)
 {
     Console.WriteLine("Świetny wynik tego zawodnika");
@@ -19,10 +18,13 @@ var nationality = footballer.Nationality;
 
 int counter = 0;
 
-Console.WriteLine("Podaj imię, nazwisko oraz narodowość piłkarza");
-Console.WriteLine();
+Console.WriteLine("Podaj imię ");
 name = Console.ReadLine();
+Console.WriteLine();
+Console.WriteLine("Podaj nazwisko");
 surname = Console.ReadLine();
+Console.WriteLine();
+Console.WriteLine("Podaj narodowość");
 nationality = Console.ReadLine();
 
 while (true)
