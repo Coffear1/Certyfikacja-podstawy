@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-
+﻿
 namespace Certyfikacja_podstawy
 {
     public abstract class FootballerBase : IFootballer
@@ -13,7 +12,11 @@ namespace Certyfikacja_podstawy
             this.Surname = surname;
             this.Nationality = nationality;
         }
-       
+        
+        public FootballerBase()
+        {
+        }
+
         public string Name { get;}
         public string Surname { get;}
         public string Nationality { get;}

@@ -6,10 +6,14 @@
 
         private List<float> scores = new List<float>();
 
-        public FootballerInMemory(string name, string surname, string nationality)
-           : base(name, surname, nationality)
+        public object Name { get; }
+        public string Empty { get; }
+
+        public FootballerInMemory()
+           : base()
         {
         }
+
         public override void AddScore(float score)
         {
             if (score >= 0 && score <= 100)

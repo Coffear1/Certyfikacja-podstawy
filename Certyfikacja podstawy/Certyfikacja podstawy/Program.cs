@@ -4,7 +4,7 @@ Console.WriteLine("Witamy w programie do liczenia zdobytych goli w sezonie piłk
 Console.WriteLine("=========================================");
 Console.WriteLine();
 
-var footballer = new FootballerInMemory(string.Empty, string.Empty, string.Empty);
+var footballer = new FootballerInMemory();
 footballer.ScoreAdded += FootballerScoreAdded;
 
 void FootballerScoreAdded(object sender, EventArgs args)
