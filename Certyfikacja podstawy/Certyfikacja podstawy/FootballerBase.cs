@@ -12,14 +12,10 @@ namespace Certyfikacja_podstawy
             this.Surname = surname;
             this.Nationality = nationality;
         }
-        
-        public FootballerBase()
-        {
-        }
 
-        public string Name { get;}
-        public string Surname { get;}
-        public string Nationality { get;}
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Nationality { get; set; }
 
         public abstract void AddScore(float score);
         

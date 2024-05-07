@@ -6,11 +6,8 @@
 
         private List<float> scores = new List<float>();
 
-        public object Name { get; }
-        public string Empty { get; }
-
-        public FootballerInMemory()
-           : base()
+        public FootballerInMemory(string name, string surname, string nationality)
+           : base(name, surname, nationality)
         {
         }
 

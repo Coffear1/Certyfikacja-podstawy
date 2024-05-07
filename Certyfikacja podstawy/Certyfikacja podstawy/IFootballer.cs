@@ -2,9 +2,9 @@
 {
     public interface IFootballer 
     {
-        string Name { get; }
-        string Surname { get; }
-        string Nationality { get; }
+        string Name { get; set; }
+        string Surname { get; set; }
+        string Nationality { get; set; }
         void AddScore(float score);
         void AddScore(int score);
         void AddScore(string score);
