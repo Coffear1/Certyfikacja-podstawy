@@ -7,7 +7,7 @@ namespace Footballer.Tests
         [Test]
         public void TestStatisticsForMinResult()
         {
-            var footballer = new FootballerInMemory();
+            var footballer = new FootballerInMemory("Robert", "Lewandowski", "Polska");
             footballer.AddScore(4);
             footballer.AddScore(0);
             footballer.AddScore(2);
@@ -22,7 +22,7 @@ namespace Footballer.Tests
         [Test]
         public void TestStatisticsForMaxResult()
         {
-            var footballer = new FootballerInMemory();
+            var footballer = new FootballerInMemory("Robert", "Lewandowski", "Polska");
             footballer.AddScore(4);
             footballer.AddScore(0);
             footballer.AddScore(2);
@@ -37,7 +37,7 @@ namespace Footballer.Tests
         [Test]
         public void TestStatisticsForAverageResult()
         {
-            var footballer = new FootballerInMemory();
+            var footballer = new FootballerInMemory("Robert", "Lewandowski", "Polska");
             footballer.AddScore(4);
             footballer.AddScore(0);
             footballer.AddScore(2);
@@ -52,7 +52,7 @@ namespace Footballer.Tests
         [Test]  
         public void TestStatisticsForSumResult()
         {
-            var footballer = new FootballerInMemory();
+            var footballer = new FootballerInMemory("Robert", "Lewandowski", "Polska");
             footballer.AddScore(4);
             footballer.AddScore(0);
             footballer.AddScore(2);
@@ -67,7 +67,7 @@ namespace Footballer.Tests
         [Test]
         public void TestStatisticsForMatchRatingResult()
         {
-            var footballer = new FootballerInMemory();
+            var footballer = new FootballerInMemory("Robert", "Lewandowski", "Polska");
             footballer.AddScore(4);
             footballer.AddScore(0);
             footballer.AddScore(2);
