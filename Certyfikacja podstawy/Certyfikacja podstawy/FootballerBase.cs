@@ -13,9 +13,9 @@ namespace Certyfikacja_podstawy
             this.Nationality = nationality;
         }
 
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string Nationality { get; set; }
+        public string Name { get;  }
+        public string Surname { get;  }
+        public string Nationality { get;  }
 
         public abstract void AddScore(float score);
         

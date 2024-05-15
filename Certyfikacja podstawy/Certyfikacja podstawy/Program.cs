@@ -1,11 +1,11 @@
 ﻿using Certyfikacja_podstawy;
 
+
 Console.WriteLine("Witamy w programie do liczenia zdobytych goli w sezonie piłkarskim");
 Console.WriteLine("=========================================");
 Console.WriteLine();
 
 var footballer = new FootballerInMemory(string.Empty, string.Empty, string.Empty);
-footballer.ScoreAdded += FootballerScoreAdded;
 
 void FootballerScoreAdded(object sender, EventArgs args)
 {
@@ -18,14 +18,18 @@ var nationality = footballer.Nationality;
 
 int counter = 0;
 
-Console.WriteLine("Podaj imię");
+Console.WriteLine("Podaj imię i wciśnij Enter:");
 name = Console.ReadLine();
 Console.WriteLine();
-Console.WriteLine("Podaj nazwisko");
+Console.WriteLine("Podaj nazwisko i wciśnij Enter:");
 surname = Console.ReadLine();
 Console.WriteLine();
-Console.WriteLine("Podaj narodowość");
+Console.WriteLine("Podaj narodowość i wciśnij Enter:");
 nationality = Console.ReadLine();
+
+var footballer1= new FootballerInMemory(name, surname, nationality);
+
+footballer1.ScoreAdded += FootballerScoreAdded;
 
 while (true)
 {
@@ -35,8 +39,8 @@ while (true)
     
     try
     {
-        footballer.AddScore(input);
-       
+        footballer1.AddScore(input);
+
     }
     catch (Exception e)
     {
@@ -51,8 +55,11 @@ while (true)
 
 Console.WriteLine();
 Console.WriteLine("==========================================================");
-var statistics = footballer.GetStatistics();
+var statistics = footballer1.GetStatistics();
 Console.WriteLine("====== STATYSTYKI ======");
+Console.WriteLine();
+Console.WriteLine($"Zawodnik: {footballer1.Name} {footballer1.Surname}");
+Console.WriteLine($"Kraj pochodzenia: {footballer1.Nationality}");
 Console.WriteLine();
 Console.WriteLine($"Średnio gole zdobyte na mecz: {statistics.Average:N2}");
 Console.WriteLine($"Minimalna liczba goli w meczu : {statistics.Min}");
